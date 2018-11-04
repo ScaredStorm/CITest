@@ -74,7 +74,11 @@ void PrintList(Node * head)
 int main(int argc, char** argv)
 {
     Node * list = CreateList(10);
+
+    std::cout << "Normal list:\n";
     PrintList(list);
+
+    std::cout << "Reversed list:\n";
     ReverseList(&list);
     PrintList(list);
 
